@@ -22,4 +22,5 @@ while True:
     os.system("git add .")
     os.system("git commit -m \"{}\"".format(commit_name))
     os.system("git push -u origin \"{}\"".format(branch_name))
+    print("waiting")
     time.sleep(time_gap)
