@@ -6,4 +6,4 @@ if commit_name == "":
 
 os.system("git add .")
 os.system("git commit -m \"{}\"".format(commit_name))
-os.system("git push -u origin HEAD:master")
+os.system("git push -u origin main")
