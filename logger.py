@@ -5,8 +5,9 @@ current_time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 print(current_time)
 
 while True:
-    log_text = raw_input("Log: ")
+    log_text = input("Log: ")
     if log_text == "":
+        print("[!] Exiting .. ")
         sys.exit()
     final_log_text = """
     [TIME:{}]->{}\n""".format(current_time, log_text)

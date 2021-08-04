@@ -1,2 +1,6 @@
 
     [TIME:2021-08-04 10:44:23]->made complete a project directory and subdirectory with files
+
+    [TIME:2021-08-04 10:46:00]->added all file in github repo
+
+    [TIME:2021-08-04 10:46:00]->made a webversion of all files and planned to connect them with websection in future
