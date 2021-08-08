@@ -1,5 +1,6 @@
 import os
 import platform
+import sys
 print("\n\n")
 print("		[1] English - Gofran\n		[2] English - Rokon\n		[3] Biology\n		[4] ICT\n		[5] Bangla - Halima Khanom\n		[6] Bangla - Sultana Ara Begum\n		[7] Physcis\n		[8] Highermath\n		[9] Chemistry")
 
@@ -67,7 +68,7 @@ print("\n")
 print("[+] All Details Here: \n")
 print("		[*] Subject Name: {}\n		[*] Teacher Name: {}\n		[*] ID: {}\n		[*] Password: {}".format(Subject_name2, teacher, ID, Password))
 print("\n")
-req_for_link = input("Do you want to get the Link: Press Enter For \"yes\"")
+req_for_link = input("Do you want to get the Link:(press ENTER for yes)")
 
 if req_for_link == "":
 	platforms = platform.system()
@@ -77,6 +78,7 @@ if req_for_link == "":
 	if platforms.startswith("lin"):
 		
 		os.system("google-chrome {}".format(link))
+		sys.exit()
 	if platforms.startswith("win"):
 		os.system("start chrome {}".format(link))
 	
